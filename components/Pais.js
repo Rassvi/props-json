@@ -11,7 +11,7 @@ const Pais = (props) => {
             <View style={[
                 card["card--image"]
             ]}>
-                <Image style={[util["util--image"]]} source={props.data.flags} />
+                <Image style={[util["util--image"]]} source={props.data.flags.png} />
             </View>
 
             <View style={[
@@ -19,7 +19,6 @@ const Pais = (props) => {
                 util["util--pos-abs"]
             ]}>
                 <Text style={{FontSize: 18}}>
-                    Se busca: {props.data.nombre} {props.data.name}
                 </Text>
             </View>
         </View>
@@ -35,6 +34,7 @@ const util = StyleSheet.create({
         width: '100%',
         maxWidth: '100%',
         aspectRatio: 1,
+        resizeMode: 'contain'
     },
 
     'util--pos-rel': {
