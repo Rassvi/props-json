@@ -11,7 +11,7 @@ const Empleado = (props) => {
             <View style={[
                 card["card--image"]
             ]}>
-                {/* <Image style={[util["util--image"]]} source={props.data.flags.png} /> */}
+                <Image style={[util["util--image"]]} source={props.persona.foto} />
             </View>
 
             <View style={[
@@ -19,7 +19,7 @@ const Empleado = (props) => {
                 util["util--pos-abs"]
             ]}>
                 <Text style={{FontSize: 18}}>
-                    {/* Se busca: {props.data.nombre} {props.data.apellido1} */}
+                    Se busca: {props.persona.nombre} {props.persona.apellido1}
                 </Text>
             </View>
         </View>
