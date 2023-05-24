@@ -19,6 +19,7 @@ const Pais = (props) => {
                 util["util--pos-abs"]
             ]}>
                 <Text style={{FontSize: 18}}>
+                    {props.data.capital}
                 </Text>
             </View>
         </View>
