@@ -16,9 +16,8 @@ const Empleado = (props) => {
 
             <View style={[
                 card["card--body"],
-                util["util--pos-abs"]
             ]}>
-                <Text style={{FontSize: 18}}>
+                <Text style={{ FontSize: 18 }}>
                     Se busca: {props.persona.nombre} {props.persona.apellido1}
                 </Text>
             </View>
@@ -52,8 +51,8 @@ const util = StyleSheet.create({
 
 const card = StyleSheet.create({
     'card': {
-        minWidth: '30%',
-        maxWidth: '40%',
+        minWidth: '70%',
+        maxWidth: '80%',
 
         minHeight: 100,
         marginTop: 15,
@@ -67,10 +66,21 @@ const card = StyleSheet.create({
     'card--body': {
         flex: 2,
         backgroundColor: '#fff',
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        
+        borderRadius: 15,
+
+        elevation: 5,
         zIndex: 2,
-        height: '15%',
+        height: '100%',
         width: '100%',
-        top: '85%',
     },
 
     'card--image': {

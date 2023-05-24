@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, ScrollView } from 'react-native';
-// import { Empleado } from './components/Personas';
+import { Empleado } from './components/Personas';
 import data from './json/paises.json';
 import persona from './json/data.json'
 import { Pais } from './components/Pais';
@@ -16,13 +16,13 @@ export default function App() {
                 )
             }
 
-            {/* {
+            {
                 persona.map(
                     (values)=> (
                         <Empleado persona={ values }/>
                     )
                 )
-            } */}
+            }
             <StatusBar style="auto" />
         </ScrollView>
     );
