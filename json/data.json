@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Susan",
+    "apellido1": "Smith",
+    "sexo": "M",
+    "email": "susan@gmail.com",
+    "celular": "6142845789",
+    "foto": "https://randomuser.me/api/portraits/women/56.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Brandon",
+    "apellido1": "Medina",
+    "sexo": "H",
+    "email": "brandon@gmail.com",
+    "celular": "6142246358",
+    "foto": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Megan",
+    "apellido1": "Méndez",
+    "sexo": "M",
+    "email": "megan@gmail.com",
+    "celular": "6144517712",
+    "foto": "https://randomuser.me/api/portraits/women/58.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Francisco",
+    "apellido1": "Rojero",
+    "sexo": "H",
+    "email": "fco@gmail.com",
+    "celular": "6142362234",
+    "foto": "https://randomuser.me/api/portraits/men/30.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Rosa",
+    "apellido1": "García",
+    "sexo": "M",
+    "email": "rosa@gmail.com",
+    "celular": "6144552329",
+    "foto": "https://randomuser.me/api/portraits/women/48.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Eduardo",
+    "apellido1": "Sierra",
+    "sexo": "H",
+    "email": "eduardo@gmail.com",
+    "celular": "6148305277",
+    "foto": "https://randomuser.me/api/portraits/men/20.jpg"
+  }
+]
