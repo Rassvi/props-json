@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 
-const Empleado = (props) => {
+const Pais = (props) => {
     return (
         <View style={[
             card["card"],
@@ -11,7 +11,7 @@ const Empleado = (props) => {
             <View style={[
                 card["card--image"]
             ]}>
-                {/* <Image style={[util["util--image"]]} source={props.data.flags.png} /> */}
+                <Image style={[util["util--image"]]} source={props.data.flags} />
             </View>
 
             <View style={[
@@ -19,7 +19,7 @@ const Empleado = (props) => {
                 util["util--pos-abs"]
             ]}>
                 <Text style={{FontSize: 18}}>
-                    {/* Se busca: {props.data.nombre} {props.data.apellido1} */}
+                    Se busca: {props.data.nombre} {props.data.name}
                 </Text>
             </View>
         </View>
@@ -79,4 +79,4 @@ const card = StyleSheet.create({
     }
 });
 
-export { Empleado }
+export { Pais }

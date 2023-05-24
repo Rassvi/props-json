@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, ScrollView } from 'react-native';
-import data from './json/data.json';
-import { Empleado } from './components/Personas';
+// import { Empleado } from './components/Personas';
+import data from './json/paises.json';
+import { Pais } from './components/Pais';
 
 export default function App() {
     return (
@@ -9,7 +10,8 @@ export default function App() {
             {
                 data.map(
                     (values)=> (
-                        <Empleado data={ values }/>
+                        // <Empleado data={ values }/>
+                        <Pais data={values} />
                     )
                 )
             }
