@@ -1,5 +1,4 @@
 import { View, Text, Image, StyleSheet } from "react-native";
-
 const Pais = (props) => {
     return (
         <View style={[
@@ -11,16 +10,24 @@ const Pais = (props) => {
             <View style={[
                 card["card--image"]
             ]}>
-                <Image style={[util["util--image"]]} source={props.data.flags.png} />
+                <Image
+                    blurRadius={2.5}
+                    style={
+                        [util["util--image"]]} source={
+                            props.data.flags.png
+                        }
+                />
             </View>
 
             <View style={[
                 card["card--body"],
-                util["util--pos-abs"]
+                util["util--pos-abs"],
+
             ]}>
-                <Text style={{FontSize: 18}}>
-                    {props.data.capital}
-                </Text>
+                <Text style={card["card--title"]}>{props.data.name.official}</Text>
+                <Text style={card["card--text"]}>Alias: {props.data.name.common}</Text>
+                <Text style={card["card--text"]}>Capital: {props.data.capital}</Text>
+                <Text style={card["card--text"]}>Población: {props.data.population}</Text>
             </View>
         </View>
     );
@@ -35,7 +42,6 @@ const util = StyleSheet.create({
         width: '100%',
         maxWidth: '100%',
         aspectRatio: 1,
-        resizeMode: 'contain'
     },
 
     'util--pos-rel': {
@@ -53,30 +59,55 @@ const util = StyleSheet.create({
 
 const card = StyleSheet.create({
     'card': {
-        minWidth: '30%',
-        maxWidth: '40%',
+        minWidth: '90%',
+        maxWidth: '99%',
+        borderRadius: 15,
+        backgroundColor: 'rgba(255,255,255, 0.1)',
 
-        minHeight: 100,
+        height: 450,
         marginTop: 15,
         marginBottom: 15,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity: 0.36,
+        shadowRadius: 6.68,
+
+        elevation: 11,
     },
 
     'card--row': {
+
         flexDirection: 'row',
     },
 
     'card--body': {
+        justifyContent: 'space-around',
         flex: 2,
-        backgroundColor: '#fff',
+        textAlign: 'center',
+        borderRadius: 15,
+        padding: 15,
+        backgroundColor: 'rgba(69, 72, 57, 0.7)',
         zIndex: 2,
-        height: '15%',
+        height: '100%',
         width: '100%',
-        top: '85%',
     },
 
     'card--image': {
         flex: 1,
         zIndex: 1,
+    },
+
+    'card--title': {
+        color: 'white',
+        fontSize: 25,
+    },
+
+    'card--text': {
+        color: 'white',
+        fontSize: 18,
     }
 });
 
